@@ -18,7 +18,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-// Stateful Component SideBar
+// Stateful Component List Sidebar
 export default function SelectedListItem() {
   const classes = useStyles();
   const [selectedIndex, setSelectedIndex] = React.useState(1);

@@ -8,6 +8,7 @@ import { makeStyles, useTheme } from "@material-ui/core/styles";
 import TestCard from "../cards/Cards";
 import SelectedListItem from "./ListItem.js";
 
+// Styling Sidebar
 const drawerWidth = 240;
 
 const useStyles = makeStyles(theme => ({
@@ -30,6 +31,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
+// Navbar Component
 function NavBar(props) {
   const { container } = props;
   const classes = useStyles();
