@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "soal": "Dua garis yang sejajar disajikan dalam bentuk matriks sebagai [2 a b -6][x y] = [5 7]. Nilai ab adalah...",
+    "pilihan": {
+      "a": "-12",
+      "b": "-3",
+      "c": "0",
+      "d": "12",
+      "e": "21"
+    }
+  },
+  {
+    "id": 2,
+    "soal": "Diketahui gradien garis singgung grafik fungsi f di titik P adalah empat kali negatif absis P. Grafik tersebut melalui titik Q(2,42). Nilai maksimum f sebesar b tercapai di x=a. Nilai 3a+b adalah...",
+    "pilihan": {
+      "a": "0",
+      "b": "34",
+      "c": "48",
+      "d": "50",
+      "e": "60"
+    }
+  },
+  {
+    "id": 3,
+    "soal": "Sebuah benda bergerak sepanjang sumbu x dengan percepatan a(t)=-4+3. Mula-mula benda bergerak ke arrah sumbu x positif dari keadaan diam. Manakah pernyataan berikut yang benar?",
+    "pilihan": {
+      "a": "Pada t=0,75 detik benda berhenti.",
+      "b": "Sebelum t=0,75 detik benda mengalami perlambatan sampai berhenti sesaat.",
+      "c": "Setelah t=0,75 detik benda mengalami perlambatan kemudian bergerak konstan.",
+      "d": "Setelah t=0,75 detik benda mengalami perlambatan kemudian bergerak konstan.",
+      "e": "Setelah t=0,75 detik benda diperlambat sampai berhenti sesaat kemudian dipercepat."
+    }
+  },
+  {
+    "id": 4,
+    "soal": "Sebanyak 1 mL HCl 1,0 M diencerkan dengan H20 hingga volumenya menjadi 100 mL. Kemudian 50 mL larutan ini direaksikan dengan 50 mL NH3 0,02 M. Jika Kb NH3 = 10pangkat-5 maka pH larutan yang terbentuk adalah...",
+    "pilihan": {
+      "a": "5",
+      "b": "7",
+      "c": "9",
+      "d": "11",
+      "e": "12"
+    }
+  },
+  {
+    "id": 5,
+    "soal": "Senyawa yang jika dioksidasi menggunakan kalium bikromat menghasilkan asam adalah...",
+    "pilihan": {
+      "a": "2,3-butandiol",
+      "b": "isobutanol",
+      "c": "isopropanol",
+      "d": "sec-butanol",
+      "e": "t-butanol"
+    }
+  },
+  {
+    "id": 6,
+    "soal": "Faktor lingkungan yang TIDAK menyebabkan tingginya produktivitas hutan hujan tropis adalah...",
+    "pilihan": {
+      "a": "suhu udara yang hangat",
+      "b": "tingginya curah hujan",
+      "c": "tanah",
+      "d": "lamanya intensitas cahaya matahari",
+      "e": "tingginya keankaragaman tumbuhan"
+    }
+  },
+  {
+    "id": 7,
+    "soal": "Tumbuhan yang mengalami apoksimis selain manggis adalah...",
+    "pilihan": {
+      "a": "salak",
+      "b": "mangga",
+      "c": "duku",
+      "d": "nangka",
+      "e": "durian"
+    }
+  },
+  {
+    "id": 8,
+    "soal": "Tumbuhan yang TIDAK mengalami partenokarpi selain pisang adalah...",
+    "pilihan": {
+      "a": "sirsak",
+      "b": "nanas",
+      "c": "terong",
+      "d": "timun",
+      "e": "sukun"
+    }
+  },
+  {
+    "id": 9,
+    "soal": "Partenokarpi buatan umum dilakukan pada tanaman...",
+    "pilihan": {
+      "a": "cabai",
+      "b": "tomat",
+      "c": "semangka",
+      "d": "jeruk",
+      "e": "buncis"
+    }
+  },
+  {
+    "id": 10,
+    "soal": "Sebuah benda bergerak sepanjang sumbu x dengan percepatan a(t)=-4+3. Mula-mula benda bergerak ke arrah sumbu x positif dari keadaan diam. Manakah pernyataan berikut yang benar?",
+    "pilihan": {
+      "a": "Pada t=0,75 detik benda berhenti.",
+      "b": "Sebelum t=0,75 detik benda mengalami perlambatan sampai berhenti sesaat.",
+      "c": "Setelah t=0,75 detik benda mengalami perlambatan kemudian bergerak konstan.",
+      "d": "Setelah t=0,75 detik benda mengalami perlambatan kemudian bergerak konstan.",
+      "e": "Setelah t=0,75 detik benda diperlambat sampai berhenti sesaat kemudian dipercepat."
+    }
+  }
+]
