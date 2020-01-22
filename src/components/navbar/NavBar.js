@@ -5,8 +5,7 @@ import Drawer from "@material-ui/core/Drawer";
 import Hidden from "@material-ui/core/Hidden";
 import List from "@material-ui/core/List";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
-import TestCard from "../cards/Cards";
-import SelectedListItem from "./ListItem.js";
+import SelectedListItem from "./SelectedListItem";
 
 // Styling Sidebar
 const drawerWidth = 240;
@@ -55,7 +54,7 @@ function NavBar(props) {
   return (
     <div className={classes.root}>
       <CssBaseline />
-      <nav className={classes.drawer} aria-label="mailbox folders">
+      <nav className={classes.drawer}>
         {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
         <Hidden smUp implementation="css">
           <Drawer
@@ -68,7 +67,7 @@ function NavBar(props) {
               paper: classes.drawerPaper
             }}
             ModalProps={{
-              keepMounted: true // Better open performance on mobile.
+              keepMounted: true
             }}
           ></Drawer>
         </Hidden>
@@ -84,9 +83,6 @@ function NavBar(props) {
           </Drawer>
         </Hidden>
       </nav>
-      <main className={classes.content}>
-        <TestCard></TestCard>
-      </main>
     </div>
   );
 }
