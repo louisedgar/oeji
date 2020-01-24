@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
+import "./Soal.css";
 import TestCard from "../components/cards/TestCard";
 
 class Soal extends Component {
@@ -28,9 +29,10 @@ class Soal extends Component {
   };
   render() {
     return (
-      <div>
-        <h1>Soal</h1>
-        <TestCard getQuestion={this.getQuestion} />
+      <div className="content-soal">
+        <div>
+          <TestCard />
+        </div>
       </div>
     );
   }
