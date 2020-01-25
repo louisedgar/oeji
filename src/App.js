@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Dashboard from "./pages/Dashboard";
 import Profil from "./pages/Profil";
 import Soal from "./pages/Soal";
+import Hasil from "./pages/Hasil";
 
 class App extends Component {
   render() {
@@ -16,6 +17,7 @@ class App extends Component {
             <Route path="/dashboard" exact component={Dashboard} />
             <Route path="/profil" component={Profil} />
             <Route path="/soal" component={Soal} />
+            <Route path="/hasil" component={Hasil} />
           </Switch>
         </div>
       </Router>
