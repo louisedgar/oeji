@@ -1,40 +1,50 @@
-import React, { useState, useEffect } from "react";
+import React, { Component } from "react";
 import axios from "axios";
 import "./Soal.css";
 import TestCard from "../components/cards/TestCard";
+import TestNumber from "../components/cards/TestNumber";
 
-function Soal() {
-  const [question, setQuestion] = useState({
-    question: {
-      id: "",
-      soal: "",
-      pilihan: ""
-    }
-  });
+class Soal extends Component {
+  state = {
+    question: { id: "", soal: "", pilihan: "" }
+  };
 
-  useEffect(() =>
+  componentDidMount = () => {
     axios
       .get("http://5e26af5f6eeb440014535fff.mockapi.io/soal")
       .then(response => {
         console.log(response);
-        setQuestion({
-          question: {
-            id: response.data.id,
-            soal: response.data.soal,
-            pilihan: response.data.pilihan
-          }
-        });
+        if (response !== undefined) {
+          this.setState({
+            question: {
+              id: response.data.id,
+              soal: response.data.soal,
+              pilihan: response.data.pilihan
+            }
+          });
+        }
       })
-      .catch(error => console.log(error))
-  );
+      .catch(error => console.log(error));
+  };
 
-  return (
-    <div className="container">
-      <div className="content">
-        <TestCard />
+  choose = obj => {
+    this.setState({
+      question: { id: obj.id, soal: obj.soal, pilihan: obj.pilihan }
+    });
+  };
+
+  render() {
+    return (
+      <div className="container">
+        <div className="left">
+          <TestCard />
+        </div>
+        <div className="right">
+          <TestNumber />
+        </div>
       </div>
-    </div>
-  );
+    );
+  }
 }
 
 export default Soal;

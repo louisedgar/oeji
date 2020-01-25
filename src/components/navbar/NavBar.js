@@ -181,6 +181,7 @@ export default function NavBar(props) {
           </Drawer>
         </Hidden>
       </nav>
+      <main className={classes.content}></main>
     </div>
   );
 }
