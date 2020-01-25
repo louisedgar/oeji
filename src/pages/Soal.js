@@ -36,12 +36,7 @@ class Soal extends Component {
   render() {
     return (
       <div className="container">
-        <div className="left">
-          <TestCard />
-        </div>
-        <div className="right">
-          <TestNumber />
-        </div>
+        <TestCard className="card" />
       </div>
     );
   }

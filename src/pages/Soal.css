@@ -1,4 +1,4 @@
-/* .container {
+.container {
   display: grid;
   background-image: url("../assets/background-img.png");
   height: 100vh;
@@ -6,12 +6,4 @@
   background-repeat: no-repeat;
   background-size: cover;
   align-items: center;
-} */
-
-.left {
-  display: inline-block;
-}
-
-.right {
-  display: inline-block;
 }
