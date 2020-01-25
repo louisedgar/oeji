@@ -4,19 +4,26 @@ import "./Soal.css";
 import TestCard from "../components/cards/TestCard";
 
 function Soal() {
-  const [question, setQuestion] = useState([
-    // question: {
-    //   id: "",
-    //   soal: "",
-    //   pilihan: ""
-    // }
-  ]);
+  const [question, setQuestion] = useState({
+    question: {
+      id: "",
+      soal: "",
+      pilihan: ""
+    }
+  });
 
   useEffect(() =>
     axios
       .get("http://5e26af5f6eeb440014535fff.mockapi.io/soal")
       .then(response => {
         console.log(response);
+        setQuestion({
+          question: {
+            id: response.data.id,
+            soal: response.data.soal,
+            pilihan: response.data.pilihan
+          }
+        });
       })
       .catch(error => console.log(error))
   );
