@@ -19,6 +19,7 @@ import MenuBook from "@material-ui/icons/MenuBook";
 import { Link } from "react-router-dom";
 import deepPurple from "@material-ui/core/colors/deepPurple";
 
+// styling material-ui template
 const drawerWidth = 240;
 
 const useStyles = makeStyles(theme => ({
@@ -58,6 +59,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
+// navbar props
 export default function NavBar(props) {
   const { container } = props;
   const classes = useStyles();
