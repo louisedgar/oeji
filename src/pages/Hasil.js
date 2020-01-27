@@ -4,14 +4,13 @@ import "./Hasil.css";
 import Typography from "@material-ui/core/Typography";
 import CardContent from "@material-ui/core/CardContent";
 import cardImage from "../assets/hasil.png";
-import CardMedia from "@material-ui/core/CardMedia";
 
 class Hasil extends Component {
   render() {
     return (
       <Card className="hasil-card">
         {/* <CardMedia image={cardImage} /> */}
-        <img src={cardImage}></img>
+        <img src={cardImage} alt=""></img>
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
             Selamat!

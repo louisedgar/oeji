@@ -6,4 +6,17 @@
   background-repeat: no-repeat;
   background-size: cover;
   align-items: center;
+  padding: 0 20px;
+}
+
+.section {
+  justify-items: left;
+}
+.section-a {
+  display: inline-block;
+  padding-right: 10px;
+}
+.section-b {
+  display: inline-block;
+  padding-right: 10px;
 }
