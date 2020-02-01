@@ -5,6 +5,7 @@ import Dashboard from "./pages/Dashboard";
 import Profil from "./pages/Profil";
 import Soal from "./pages/Soal";
 import Hasil from "./pages/Hasil";
+import Home from "./pages/Home";
 
 class App extends Component {
   render() {
@@ -12,7 +13,9 @@ class App extends Component {
       <Router>
         <div>
           <Switch>
-            <Route path="/dashboard" exact component={Dashboard} />
+
+            <Route path="/" exact component={Home} />
+            <Route path="/dashboard" component={Dashboard} />
             <Route path="/profil" component={Profil} />
             <Route path="/soal" component={Soal} />
             <Route path="/hasil" component={Hasil} />

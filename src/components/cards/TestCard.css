@@ -1,6 +1,11 @@
 .box {
   max-width: 500px;
   margin: 0 auto;
+  min-height: 400px;
+}
+
+.soal-content {
+  margin-bottom: 50px;
 }
 
 .choice {

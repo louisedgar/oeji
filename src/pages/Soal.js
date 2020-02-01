@@ -65,13 +65,16 @@ class Soal extends Component {
     const { question } = this.state;
     console.log("qqqq", question);
     return (
-      <div className="container">
+      <div>
         <NavBar />
-        <div className="section">
+        <div className="soal-container">
           <div className="section-a">
-            <TestCard cardContent={this.state.cardContent} />
+            <h1>Sisa Waktu</h1>
           </div>
           <div className="section-b">
+            <TestCard cardContent={this.state.cardContent} />
+          </div>
+          <div className="section-c">
             {question.map((el, index) => {
               return (
                 <TestNumber

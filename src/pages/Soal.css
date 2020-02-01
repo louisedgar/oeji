@@ -1,22 +1,26 @@
-.container {
+.soal-container {
   display: grid;
-  background-image: url("../assets/background-img.png");
-  height: 100vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  align-items: center;
-  padding: 0 20px;
+  grid-template-columns: 1fr 4fr 2fr;
+  margin: 2em;
+  border: 1px black solid;
+  max-height: 100vh;
+  align-self: center;
 }
 
-.section {
-  justify-items: left;
-}
 .section-a {
-  display: inline-block;
-  padding-right: 10px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  background-color: #15db95;
 }
+
 .section-b {
-  display: inline-block;
-  padding-right: 10px;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.section-c {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  display: flex;
+  overflow-y: scroll;
 }

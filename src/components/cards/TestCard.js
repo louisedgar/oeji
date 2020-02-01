@@ -72,6 +72,7 @@ import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
+import { Divider } from "@material-ui/core";
 
 const useStyles = makeStyles({
   card: {
@@ -97,29 +98,43 @@ export default function TestCard(props) {
 
   return (
     <Card className={classes.card}>
-      <CardContent>
+      <CardContent classname="soal-content">
         <Typography
           className={classes.title}
           color="textSecondary"
           gutterBottom
         >
-          {props.cardContent.soal}
+          Saintek
         </Typography>
         <Typography variant="h5" component="h2">
-          be{bull}nev{bull}o{bull}lent
-        </Typography>
-        <Typography className={classes.pos} color="textSecondary">
-          adjective
+          SOAL UTBK SAINTEK TAHUN 2018
         </Typography>
         <Typography variant="body2" component="p">
-          well meaning and kindly.
           <br />
-          {'"a benevolent smile"'}
+          {props.cardContent.soal}
         </Typography>
       </CardContent>
+      <Divider />
       <CardActions>
-        <Button size="small">Learn More</Button>
+        <Button size="large">A. {props.cardContent.pilihan.a}</Button>
       </CardActions>
+      <Divider />
+      <CardActions>
+        <Button size="large">B. {props.cardContent.pilihan.b}</Button>
+      </CardActions>
+      <Divider />
+      <CardActions>
+        <Button size="large">C. {props.cardContent.pilihan.c}</Button>
+      </CardActions>
+      <Divider />
+      <CardActions>
+        <Button size="large">D. {props.cardContent.pilihan.d}</Button>
+      </CardActions>
+      <Divider />
+      <CardActions>
+        <Button size="large">E. {props.cardContent.pilihan.e}</Button>
+      </CardActions>
+      <Divider />
     </Card>
   );
 }
